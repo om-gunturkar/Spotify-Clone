@@ -1,6 +1,5 @@
 /* used to directly add css */
 .border{
-    border: 2px solid red;
     margin: 3px;
 }
 .flex{
@@ -30,4 +29,7 @@
 }
 .p-1{
     padding: 10px;
+}
+.m-2{
+    margin: 16px 0;
 }
