@@ -16,6 +16,7 @@ body {
 }
 .right {
   width: 75vw;
+  position: relative;
 
 }
 
@@ -145,4 +146,18 @@ body {
 }
 .play:hover{
     opacity: 1;
+}
+
+.playbar{
+  position:absolute;
+  bottom: 0;
+  background-color: green;
+  width: 100%;
+  padding: 12px;
+}
+
+.songbuttons{
+  display: flex;
+  justify-content: center;
+  gap: 16px;
 }
