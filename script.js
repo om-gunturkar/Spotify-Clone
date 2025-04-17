@@ -11,7 +11,7 @@ async function getSongs(){ // instead of using .then() , async allows to use awa
     for(let index=0;index<as.length;index++){ // Loop through each <a> tag
         const element = as[index]; // checks if href ends with mp3 and then pushes full url to songs array
         if(element.href.endsWith(".mp3")){
-            songs.push(element.href);
+            songs.push(element.href.split("/songs/")[1]);
         }
     }
     return songs;
@@ -23,6 +23,21 @@ async function main(){
     let songs = await getSongs();
     console.log(songs)
 
+    let songUL = document.querySelector(".songList").getElementsByTagName("ul")[0]
+    for(const song of songs){
+        songUL.innerHTML = songUL.innerHTML+`<li>
+
+                <img src="/assets/music.svg" class="invert" alt="">
+                <div class="info">
+                  <div> ${song.replaceAll("%20", " ")}</div>
+                  <div>Om</div>
+                </div>
+                <div class="playnow">
+                  <span>Play Now</span>
+                  <img src="assets/play.svg" class="invert" alt="">
+                </div>
+        </li>`;
+    }
     // Play the first song
     var audio = new Audio(songs[0]); // plays song 
     audio.play()

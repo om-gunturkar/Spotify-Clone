@@ -17,7 +17,6 @@ body {
 .right {
   width: 75vw;
   position: relative;
-
 }
 
 .home ul li {
@@ -54,7 +53,6 @@ body {
   position: absolute;
   bottom: 0;
   padding: 10px 0;
-
 }
 .footer a {
   color: grey;
@@ -86,39 +84,35 @@ body {
   border-radius: 5px;
   background-color: #252525;
   position: relative;
-  
 }
-.buttons > *{
+.buttons > * {
   margin: 0 12px;
 }
-.signupbtn{
+.signupbtn {
   background-color: rgb(34, 34, 34);
   color: rgb(145, 143, 143);
-  font-weight:bold;
+  font-weight: bold;
   outline: none;
   border: none;
   cursor: pointer;
   font-size: 16px;
 }
-.signupbtn:hover{
+.signupbtn:hover {
   font-size: 17px;
   color: white;
 }
-.loginbtn{
+.loginbtn {
   background-color: white;
   border-radius: 21px;
   color: black;
   padding: 10px;
   width: 79px;
-  cursor:pointer;
+  cursor: pointer;
   font-size: 16px;
-
 }
-.loginbtn:hover{
-
+.loginbtn:hover {
   font-size: 17px;
-  font-weight:bold;
-  
+  font-weight: bold;
 }
 
 .card > * {
@@ -142,22 +136,49 @@ body {
   right: 20px;
   opacity: 0;
   transition: all 1s ease-out;
-
 }
-.play:hover{
-    opacity: 1;
+.play:hover {
+  opacity: 1;
 }
 
-.playbar{
-  position:absolute;
+.playbar {
+  position: absolute;
   bottom: 0;
-  background-color: green;
-  width: 100%;
+  background-color: rgb(255, 255, 255);
+  width: 90%;
   padding: 12px;
 }
 
-.songbuttons{
+.songbuttons {
   display: flex;
   justify-content: center;
   gap: 16px;
+}
+
+.songList ul {
+  padding: 0 12px;
+}
+
+.songList ul li {
+  list-style-type: decimal;
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px 0;
+  border: 1px solid white;
+  margin: 12px 0;
+  padding: 13px;
+  border-radius: 5px;
+}
+
+.playnow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.playnow span {
+  text-align: center;
+  font-size: 15px;
+  width: 100px;
+  padding: 12px;
 }
